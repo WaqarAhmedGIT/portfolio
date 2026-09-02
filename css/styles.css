@@ -136,15 +136,9 @@ h2 {
 }
 
 .logo-mark {
-  width: 2.2rem;
-  height: 2.2rem;
-  display: grid;
-  place-items: center;
-  background: var(--ink);
-  color: var(--paper);
-  font-family: "Anton", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.04em;
+  width: auto;
+  height: 2.4rem;
+  display: block;
 }
 
 .logo-text {
@@ -201,7 +195,8 @@ h2 {
   background: #f4efe6;
 }
 
-.hero-banner img {
+.hero-banner img,
+.hero-banner picture {
   width: 100%;
   height: auto;
   display: block;
@@ -275,6 +270,18 @@ h2 {
   margin: 0 auto;
   padding: clamp(4rem, 10vw, 7rem) var(--pad);
   scroll-margin-top: 4.5rem;
+}
+
+.cv {
+  margin: 0;
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  scroll-margin-top: 4.5rem;
+}
+
+.cv .section-head {
+  max-width: var(--max);
+  margin: 0 auto 2.4rem;
+  padding: 0 var(--pad);
 }
 
 .section-head {
@@ -384,22 +391,26 @@ h2 {
   display: none;
 }
 
+.cv-art {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.cv-art picture,
+.cv-art img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .about-intro {
   max-width: 40rem;
   margin-bottom: 2.5rem;
 }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 0.82fr 1.18fr;
-  gap: clamp(1.5rem, 4vw, 3.5rem);
-  align-items: start;
-}
-
-.about-portrait {
-  margin: 0;
-  position: sticky;
-  top: 5.5rem;
+  display: block;
+  max-width: 46rem;
 }
 
 .about-copy p {
@@ -625,14 +636,14 @@ h2 {
 }
 
 @media (max-width: 900px) {
-  .about-grid,
+  .cv-art {
+    max-width: 36rem;
+    padding: 0 var(--pad);
+  }
+
   .work-grid,
   .voice-list {
     grid-template-columns: 1fr;
-  }
-
-  .about-portrait {
-    position: static;
   }
 
   .work-card.wide img,
