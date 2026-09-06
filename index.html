@@ -1,78 +1,276 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Waqar Ahmed — Creative Portfolio</title>
-  <meta name="description" content="Waqar Ahmed is a Dubai-based senior graphic designer and creative lead shaping brands, events and experiences across the UAE and KSA.">
-  <link rel="icon" href="assets/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Waqar Ahmed — Creative Designer</title>
+<meta name="description" content="Dubai-based senior graphic designer Waqar Ahmed — brands, events and visual experiences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <div class="page-loader" aria-hidden="true"><div class="loader-mark">WA</div><div class="loader-line"><i></i></div></div>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <header class="nav">
-    <a class="brand" href="#top"><img src="assets/images/logo.png" alt=""><span>WAQAR<br>AHMED</span></a>
-    <nav aria-label="Primary"><a href="#work">Work</a><a href="#story">Story</a><a href="#connect">Contact</a></nav>
-    <a class="availability" href="#connect"><i></i> Available for selected projects</a>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="aurora a1"></div><div class="aurora a2"></div>
-      <p class="kicker reveal">Senior graphic designer · Dubai</p>
-      <h1 class="reveal">Ideas that<br><span>move people.</span></h1>
-      <div class="hero-bottom reveal">
-        <p>20+ years turning ambitious ideas into memorable brand experiences across the UAE, KSA and beyond.</p>
-        <a href="#work" class="round-link" aria-label="Explore selected work">↘</a>
-      </div>
-      <div class="hero-image reveal"><img src="assets/images/hero.jpg" alt="Waqar Ahmed, senior graphic designer"><span>CREATIVE DIRECTION / BRAND / EXPERIENCES</span></div>
-    </section>
-
-    <section class="manifesto" id="story">
-      <p class="section-label">01 / What I do</p>
-      <h2 class="reveal">I build identities, environments and moments that <em>look sharp, work hard</em> and stay remembered.</h2>
-      <div class="services">
-        <span>Brand identities</span><span>Event concepts</span><span>Key visuals</span><span>Experiential design</span><span>Creative direction</span><span>Digital & print</span>
-      </div>
-    </section>
-
-    <section class="work" id="work">
-      <div class="work-head"><p class="section-label">02 / Selected work</p><h2>Big ideas.<br>Real spaces.</h2><p>From first sketch to final production file—projects created for stages, brands, campaigns and people.</p></div>
-      <div class="project-grid" id="project-grid"></div>
-    </section>
-
-    <section class="experience">
-      <div class="experience-copy">
-        <p class="section-label">03 / The journey</p>
-        <h2>Still curious.<br><span>Still creating.</span></h2>
-        <p>Dubai has been my creative playground for more than two decades. For 15+ years, events have been where many of my biggest ideas came alive—often under impossible deadlines and after “one tiny edit.”</p>
-        <div class="numbers"><div><b data-count="20" data-suffix="+">0</b><span>Years of ideas</span></div><div><b data-count="15" data-suffix="+">0</b><span>Years in events</span></div><div><b data-count="2" data-pad="2">00</b><span>Regional markets</span></div></div>
-      </div>
-      <figure><img src="assets/images/journey-desktop.jpg" alt="Waqar Ahmed career journey and CV"><button type="button" class="view-cv">View full CV ↗</button></figure>
-    </section>
-
-    <section class="clients">
-      <p class="section-label">04 / Trusted by</p>
-      <h2>Good company.<br><span>Bold company.</span></h2>
-      <div class="brand-cloud"><span>ARAMCO</span><span>AMAZON</span><span>GOOGLE</span><span>G20</span><span>ITHRA</span><span>RICHARD MILLE</span><span>AL QADSIAH</span><span>DISCOVERY</span><span>JORDAN TOURISM</span><span>DUBAI CARES</span></div>
-      <img src="assets/images/clients.jpg" alt="Selected client collaborations">
-    </section>
-
-    <section class="connect" id="connect">
-      <p class="section-label">05 / Let’s make something memorable</p>
-      <h2>Have a brief,<br>a deadline—or<br><span>one tiny edit?</span></h2>
-      <div class="contact-row"><a href="mailto:waqar_zee@hotmail.com">waqar_zee@hotmail.com ↗</a><a href="tel:+971527255925">+971 52 725 5925 ↗</a><a href="https://www.linkedin.com/in/waqar-ahmed-6b592ba" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
-    </section>
-  </main>
-
-  <footer><span>© <b id="year"></b> Waqar Ahmed</span><span>Dubai · UAE</span><a href="#top">Back to top ↑</a></footer>
-
-  <dialog id="lightbox"><button class="close" aria-label="Close">×</button><button class="prev" aria-label="Previous">←</button><img id="lightbox-image" alt=""><div><strong id="lightbox-title"></strong><span id="lightbox-subtitle"></span></div><button class="next" aria-label="Next">→</button></dialog>
-  <script src="main.js"></script>
+<body class="loading">
+<div class="loader">
+<div class="intro-word"><span>WAQAR</span><span>AHMED</span></div>
+<div class="walk-track"><i></i><img src="assets/images/waqar-walk-alpha.png" alt="Animated line-art Waqar Ahmed walking"></div>
+<div class="intro-role">SENIOR GRAPHIC DESIGNER · DUBAI</div>
+<div class="loader-count">00</div>
+<div class="loader-bar">
+<i>
+</i>
+</div>
+</div>
+<div class="progress">
+</div>
+<div class="cursor">
+<span>VIEW</span>
+</div>
+<div class="noise">
+</div>
+<header>
+<a class="logo" href="#top">
+<img src="assets/images/waqar-portrait-v2.png" alt="Waqar Ahmed">
+<span>WAQAR<br>
+AHMED
+</span>
+</a>
+<button class="menu-button">MENU <b>+</b>
+</button>
+<div class="header-status">
+<i>
+</i> WORKING GLOBALLY<br>DUBAI, UAE</div>
+<a class="header-mail" href="mailto:waqar_zee@hotmail.com">FOR INQUIRIES<br>
+<u>waqar_zee@hotmail.com</u>
+</a>
+</header>
+<aside class="menu-panel">
+<button class="menu-close">CLOSE ×</button>
+<nav>
+<a href="#work">WORK <sup>01</sup>
+</a>
+<a href="#about">ABOUT <sup>02</sup>
+</a>
+<button class="cv-open">CV <sup>03</sup>
+</button>
+<a href="#references">REFERENCES <sup>04</sup>
+</a>
+<a href="#contact">CONTACT <sup>05</sup>
+</a>
+</nav>
+<div>
+<span>WAQAR AHMED</span>
+<span>SENIOR GRAPHIC DESIGNER</span>
+<span>© <b class="year">
+</b>
+</span>
+</div>
+</aside>
+<main id="top">
+<section class="launch">
+<div class="launch-meta">
+<span>WAQAR AHMED</span>
+<span>PORTFOLIO 2026</span>
+<span>20+ YEARS / 15+ EVENTS</span>
+</div>
+<div class="launch-art">
+<div class="orbit one">
+</div>
+<div class="orbit two">
+</div>
+<img class="line-art" src="assets/images/work-01.jpg" alt="1 Billion Followers Summit project">
+<img class="portrait" src="assets/images/work-12.jpg" alt="Richard Mille Desert Polo project">
+</div>
+<h1>
+<span>WAQAR</span>
+<span>AHMED</span>
+</h1>
+<div class="launch-bottom">
+<p>Senior graphic designer shaping brands, events and experiences across the UAE, KSA and beyond.</p>
+<a href="#work">LAUNCH <b>↘</b>
+</a>
+<span>SCROLL</span>
+</div>
+</section>
+<section class="recognition">
+<span>EXPERIENCE</span>
+<div>
+<b>20+</b>
+<p>Years in Dubai’s<br>creative industry</p>
+</div>
+<div>
+<b>15+</b>
+<p>Years creating<br>event experiences</p>
+</div>
+<div>
+<b>02</b>
+<p>Regional markets<br>UAE & KSA</p>
+</div>
+</section>
+<section class="work" id="work">
+<div class="work-heading">
+<span>SELECTED WORK</span>
+<div class="index">
+<b id="active-index">01</b>
+<i>/08</i>
+</div>
+<h2>IDEAS<br>IN MOTION</h2>
+<p>Selected identities, environments and experiences created for stages, brands, campaigns and people.</p>
+</div>
+<div class="project-stage" id="project-stage">
+</div>
+<div class="project-nav">
+<button id="prev">← PREV</button>
+<div class="nav-line">
+<i>
+</i>
+</div>
+<button id="next">NEXT →</button>
+</div>
+</section>
+<section class="reel">
+<div class="reel-track">BRANDS / EVENTS / EXPERIENCES / VISUAL STORIES / BRANDS / EVENTS / EXPERIENCES / VISUAL STORIES /</div>
+<div class="reel-images">
+<img src="assets/images/work-03.jpg" alt="Event design">
+<img src="assets/images/work-07.jpg" alt="Spatial branding">
+<img src="assets/images/work-13.jpg" alt="Creative production">
+</div>
+</section>
+<section class="about" id="about">
+<div class="about-left">
+<span>ABOUT / 02</span>
+<h2>STILL<br>CURIOUS.<br>
+<i>STILL<br>CREATING.</i>
+</h2>
+</div>
+<div class="about-right">
+<div class="about-manifesto" aria-hidden="true"><span>BRAND</span><span>EVENT</span><span>SPACE</span><span>STORY</span></div>
+<div class="about-copy">
+<p>20+ years in Dubai’s creative industry and 15+ years in events—turning bold ideas into memorable brand experiences, mastering last-minute changes and making every detail count.</p>
+<p>Brand identities, event concepts, key visuals, experiential design, campaigns, digital, outdoor, print, websites, visualization, creative direction and studio management.</p>
+<button class="cv-open">VIEW FULL CV ↗</button>
+</div>
+</div>
+</section>
+<section class="career">
+<div class="section-title">
+<span>EXPERIENCE / 03</span>
+<h2>THE<br>JOURNEY</h2>
+</div>
+<div class="career-list">
+<article>
+<b>2013—PRESENT</b>
+<h3>Entourage Marketing & Events</h3>
+<p>Senior Graphic Designer · Dubai</p>
+</article>
+<article>
+<b>2008—2013</b>
+<h3>Digital World & CMS Printing Press</h3>
+<p>Senior Graphic Designer · Dubai</p>
+</article>
+<article>
+<b>2005—2008</b>
+<h3>Millennium Media</h3>
+<p>Senior Graphic Designer · Karachi</p>
+</article>
+<article>
+<b>2003—2005</b>
+<h3>Norani Printing Press</h3>
+<p>Graphic Designer · Karachi</p>
+</article>
+<article>
+<b>1999—2003</b>
+<h3>Ali Graphics</h3>
+<p>Graphic Designer · Karachi</p>
+</article>
+</div>
+</section>
+<section class="brands">
+<span>SELECTED COLLABORATIONS</span>
+<p>RICHARD MILLE · ARAMCO · AMAZON · GOOGLE · G20 · ITHRA · AL QADSIAH · DUBAI CARES · DISCOVERY CHANNEL · JORDAN TOURISM</p>
+</section>
+<section class="references" id="references">
+<div class="section-title">
+<span>PROFESSIONAL REFERENCES / 04</span>
+<h2>PEOPLE<br>I BUILT<br>
+<i>WITH</i>
+</h2>
+</div>
+<div class="reference-list">
+<a href="mailto:malakekkawi7@gmail.com">
+<b>Malak Al Ekkawi</b>
+<span>Senior Art Director · Entourage</span>
+<i>↗</i>
+</a>
+<a href="mailto:Albert.lotter@equiti.com">
+<b>Al Lotter</b>
+<span>Head of Creative · Equiti Group</span>
+<i>↗</i>
+</a>
+<a href="mailto:vincent.drevet@yahoo.fr">
+<b>Vincent Drevet</b>
+<span>Creative Head · +971 52 890 4169</span>
+<i>↗</i>
+</a>
+<a href="mailto:Shevornekattri@icloud.com">
+<b>Shevorne Kattri</b>
+<span>Senior Account Manager · 056 178 5516</span>
+<i>↗</i>
+</a>
+<a href="mailto:marwa.alibk@live.com">
+<b>Marwa Bakhuraisa</b>
+<span>Digital Marketing Manager · Innocean</span>
+<i>↗</i>
+</a>
+<a href="mailto:manoshi22@gmail.com">
+<b>Manoshi Banerjee</b>
+<span>Public Relations Manager · Entourage</span>
+<i>↗</i>
+</a>
+<a href="mailto:ariesblackdesign@outlook.com">
+<b>Mo Suliman (Black)</b>
+<span>Senior CG Generalist · Entourage</span>
+<i>↗</i>
+</a>
+</div>
+</section>
+<section class="contact" id="contact">
+<span>COME SAY HI / 05</span>
+<h2>LET’S MAKE<br>SOMETHING<br>
+<i>MEMORABLE.</i>
+</h2>
+<div class="contact-grid">
+<p>WAQAR AHMED<br>
+<small>Senior Graphic Designer · Dubai, UAE</small>
+</p>
+<a href="mailto:waqar_zee@hotmail.com">waqar_zee@hotmail.com ↗</a>
+<a href="tel:+971527255925">+971 52 725 5925 ↗</a>
+<a href="https://www.linkedin.com/in/waqar-ahmed-6b592ba" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+</div>
+</section>
+</main>
+<footer>
+<span>WAQAR AHMED © <b class="year">
+</b>
+</span>
+<span>DESIGN THAT WORKS HARD</span>
+<a href="#top">BACK TO TOP ↑</a>
+</footer>
+<dialog id="project-dialog">
+<button class="dialog-close">CLOSE ×</button>
+<img alt="">
+<div>
+<strong>
+</strong>
+<small>
+</small>
+</div>
+</dialog>
+<dialog id="cv-dialog">
+<button class="cv-close">CLOSE ×</button>
+<img src="assets/images/waqar-cv.png" alt="Waqar Ahmed CV">
+</dialog>
+<script src="main.js">
+</script>
 </body>
 </html>
